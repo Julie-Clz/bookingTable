@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <title>Reservations List</title>
+</head>
+
+<body>
+  <h1>Reservations List</h1>
+  <ul>
+    <% resas.forEach(resa=> { %>
+      <!-- <li> name: <%= resa.name %> -->
+      <li> <a href="/reservations/<%= resa.id %>">name: <%= resa.name %></a>
+        <p>
+        </p>
+      </li>
+      <% }); %>
+
+    </ul>
+  </body>
+  
+  </html>
